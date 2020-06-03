@@ -1,0 +1,76 @@
+/* body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+} */
+* {
+  box-sizing: border-box;
+}
+
+.back {
+  width: 100%;
+  height: 100vh !important;
+  position: relative;
+  background-attachment: fixed;
+  /* background-position: center center; */
+  background-size: cover;
+  background-image: url(./../img/paisaje.jpg);
+  background-position: top center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.back::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(24, 47, 104, 0.6);
+  z-index: -1;
+}
+.login {
+  margin: 100px 0;
+}
+.titulo {
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+}
+.img-circle {
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 50% !important;
+}
+.parrafo {
+  color: #fff;
+  margin: 20px 20px;
+}
+.right {
+  align-self: flex-end;
+}
+.card-tam {
+  width: 60%;
+}
+table {
+  border-collapse: collapse;
+  width: 300px;
+  background: #fff;
+  /* width="344" border="1" align="center" cellpadding="2" cellspacing="2" bgcolor="#CCCCCC" */
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+@media screen and (max-width: 900px) {
+  .card-tam {
+    width: 90%;
+  }
+}
